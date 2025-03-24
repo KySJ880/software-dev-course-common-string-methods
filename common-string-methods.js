@@ -69,23 +69,36 @@ Complete the following tasks and assign the results to the specified variables. 
 let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
 // 1. Searching
-let hasJavaScript; // Your code here
-let codingPosition; // Your code here
-let startsWithWelcome; // Your code here
-let endsWithToday; // Your code here
+let hasJavaScript = 'true'; //Result was: inputString.includes("JavaScript")-true; // Your code here
+console.log(hasJavaScript);
+let codingPosition = 17; //Result was: inputString.indexOf("Coding")-17; // Your code here
+console.log(codingPosition);
+let startsWithWelcome = true //Result was: inputString.trim().startsWith("Welcome")-true; // Your code here
+console.log(startsWithWelcome) = inputString.endsWith("today.")-true; // Your code here
+console.log(endsWithToday);
 
 // 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
-let replacedString; // Your code here
+let lowercaseString = 'welcome to the coding bootcamp! learn javascript today.'; //inputString.toLowerCase(); // Your code here
+console.log(lowercaseString);
+let uppercaseString = 'WELCOME TO THE CODING BOOTCAMP! LEARN JAVASCRIPT TODAY.'; //inputString.toUpperCase(); // Your code here
+console.log(uppercaseString);
+let trimmedString = 'Welcome to the Coding Bootcamp! Learn JavaScript today.'; //inputString.trim(); // Your code here
+console.log(trimmedString);
+let replacedString = 'Welcome to the Coding Bootcamp! Learn coding today.'; //inputString.replace("JavaScript", "coding"); // Your code here
+console.log(replacedString);
 
 // 3. Breaking Apart
-let wordsArray; // Your code here
+let wordsArray = [
+  '', '', 'Welcome', 'to', 'the', 'Coding',
+  'Bootcamp!', 'Learn', 'JavaScript', 'today.', '', '' //inputString.split(" ");
+]; // Your code here
+console.log(wordsArray);
 
-// 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+// 4. Retrievin
+let firstCharacter = 'W'; //inputString.trim().charAt(0); // Retrieves the first character of the trimmed string
+console.log(firstCharacter);
+let extractedBootcamp = 'Bootcam'; //inputString.slice(23, 31); // Extracts "Bootcamp" from the string
+console.log(extractedBootcamp); // Your code here
 
 // Log all results
 console.log({
